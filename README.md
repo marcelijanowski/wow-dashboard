@@ -18,3 +18,10 @@ To run project on local machine run command:
 ```
 npm start
 ```
+### On improvements
+- Create unit test 
+- Create e2e test using postman or supertest
+- Use some already establish css boostrap library like tailwindcss
+- Dockerize
+- Deploy scripts 
+- Cleaning frontend code into more separated parts using atomic design
