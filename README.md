@@ -5,7 +5,7 @@
 
 Clone the repo and install Node dependencies
 ```
-git clone git@github.com:
+git clone git@github.com:marcelijanowski/wow-dashboard.git
 npm install
 ```
 
