@@ -1,0 +1,94 @@
+{
+	"info": {
+		"_postman_id": "1c608de9-3756-4eee-afc0-38a56a97afd8",
+		"name": "WoW Dashboard",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get token",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "04034dd1-7e13-47af-bd7d-2fd97bb59644",
+						"exec": [
+							"pm.test(\"Status test\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"pm.test(\"Valid response\", () => {",
+							"   const response = pm.response.json();",
+							"   pm.collectionVariables.set(\"token\",response.access_token);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/auth/token",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"auth",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Generate jobs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get job",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get job with query parameters",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"id": "9cadffce-f2f1-4525-a607-d8fe24853e79",
+			"key": "token",
+			"value": "hdFVaxvWjDYtWsxhBDXvoCbYMC8X5kK2tYZNCyRTPGAzDp1t1uUBk1HeA2SunvxLypmG5e7FjCHwKEP16wUxTI6FtYL6AfDg0qheoV4QUDowpYEc5FifPfH6s1miyzAJdlvwiVGB77U6mhLEeFqoN2uQUT2yCZSp7L128j3HWrw0rJerWoix7FxenPN2iE1EuCUkueAHMyHSPwIVzYOdIcHjH8KA8jGBMaVWau3fZEbPD46DEkVfhbwMKFWsvUzy"
+		},
+		{
+			"id": "44f3e034-9de4-4f86-a93f-d51f4214f0de",
+			"key": "id",
+			"value": "5fcf56e27cdb1f5cc9dd70cc"
+		}
+	],
+	"protocolProfileBehavior": {}
+}
