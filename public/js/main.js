@@ -68,9 +68,8 @@
       jobId = data.job_id
       setTimeout(() => getReport(token, jobId).then(data => {
         const groupData = formatData(data);
-        console.log(groupData);
         generateChart(groupData);
-      }), 3000)
+      }), 2000)
     })
   });
 })();
