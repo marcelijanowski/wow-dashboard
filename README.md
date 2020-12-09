@@ -25,3 +25,5 @@ npm start
 - Dockerize
 - Deploy scripts 
 - Cleaning frontend code into more separated parts using atomic design
+- Changing apporach on timeout for getting raport to use `circuit breaker` or `webhook` approach
+
