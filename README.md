@@ -20,6 +20,7 @@ npm start
 ```
 ### On improvements
 - Add functionality on input box to filter results (API endpoint is already done with query string - postman collection)
+- Better error handling (cirtuit breaker) and feedback for a user
 - Create unit test 
 - Create e2e test using postman or supertest
 - Use some already establish css boostrap library like tailwindcss
